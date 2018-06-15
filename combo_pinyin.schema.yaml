@@ -63,7 +63,7 @@ chord_composer:
   # 拼寫運算規則，將一組並擊編碼轉換爲拼音音節
   algebra:
     # 先將物理按鍵字符對應到宮保拼音鍵位中的拼音字母
-    - 'xlit|swxdecfrvgtbnjum ki,lo.|sczhlfgdbktpRiuVaNIUeoE|'
+    - 'xlit|qazpswxdecfrvgtbnjum ki,lo.|aaapsczhlfgdbktpRiuVaNIUeoE|'
     # 以下根據宮保拼音的鍵位分別變換聲母、韻母部分
     # 組合聲母
     - xform/^zf/zh/
@@ -76,7 +76,7 @@ chord_composer:
     - xform/^[kc]([iV])/q$1/
     - xform/^[hs]([iV])/x$1/
     # 空格鍵單擊時產生空白
-    - 'xform/^a$/ /'
+    #- 'xform/^a$/ /'
     # 特例：以組合鍵[ae]輸入拼音‹a›
     - xform/ae$/a/
     # 單擊時產生字符 , .
